@@ -1,25 +1,33 @@
 import React from 'react'
+import { FaReact } from "react-icons/fa6";
+import { DiNodejs } from "react-icons/di";
+import { FaPython } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { IoLogoFigma } from "react-icons/io5";
+import { SiDjango } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { SiPostman } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 import './Skills.css'
 
 const Skills = () => {
   const skills = [
-    { name: 'HTML/CSS', level: 90, icon: '🌐' },
-    { name: 'JavaScript', level: 85, icon: '⚡' },
-    { name: 'React', level: 80, icon: '⚛️' },
-    { name: 'Node.js', level: 75, icon: '🟢' },
-    { name: 'Python', level: 70, icon: '🐍' },
-    { name: 'SQL', level: 80, icon: '🗄️' },
-    { name: 'Git', level: 85, icon: '📝' },
-    { name: 'AWS', level: 65, icon: '☁️' }
+    { name: 'React', level: 80, icon: <FaReact /> },
+    { name: 'Node.js', level: 75, icon: <DiNodejs /> },
+    { name: 'Python', level: 70, icon: <FaPython /> },
+    { name: 'Django', level: 80, icon: <SiDjango /> },
+    { name: 'Git', level: 85, icon: <FaGithub />},
+    { name: 'AWS', level: 65, icon: <FaAws />}
   ]
 
   const tools = [
-    { name: 'VS Code', icon: '💻' },
-    { name: 'Figma', icon: '🎨' },
-    { name: 'Postman', icon: '📮' },
-    { name: 'Docker', icon: '🐳' },
-    { name: 'MongoDB', icon: '🍃' },
-    { name: 'PostgreSQL', icon: '🐘' }
+    { name: 'Figma', icon: <IoLogoFigma /> },
+    { name: 'Postman', icon: <SiPostman /> },
+    { name: 'Docker', icon: <FaDocker /> },
+    { name: 'MongoDB', icon: <SiMongodb /> },
+    { name: 'PostgreSQL', icon: <BiLogoPostgresql /> }
   ]
 
   return (
